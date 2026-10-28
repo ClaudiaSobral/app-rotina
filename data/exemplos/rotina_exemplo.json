@@ -1,0 +1,32 @@
+{
+    "exportado_em": "2026-10-24T20:30:00Z",
+    "eventos": [
+      {
+        "evento_id": "a1f3c2d4-0000-4000-8000-000000000001",
+        "tipo": "tarefa_criada",
+        "timestamp_utc": "2026-10-24T14:02:10Z",
+        "fuso": "America/Sao_Paulo",
+        "versao_esquema": 1,
+        "tarefa_id": "t-0001",
+        "nome": "Estudar Airflow",
+        "categoria": "Estudo"
+      },
+      {
+        "evento_id": "b7c9e1f2-0000-4000-8000-000000000002",
+        "tipo": "sessao_iniciada",
+        "timestamp_utc": "2026-10-24T14:05:00Z",
+        "fuso": "America/Sao_Paulo",
+        "versao_esquema": 1,
+        "tarefa_id": "t-0001",
+        "sessao_id": "s-0001"
+      },
+      {
+        "evento_id": "d2e8a3b4-0000-4000-8000-000000000003",
+        "tipo": "sessao_finalizada",
+        "timestamp_utc": "2026-10-24T14:45:30Z",
+        "fuso": "America/Sao_Paulo",
+        "versao_esquema": 1,
+        "sessao_id": "s-0001"
+      }
+    ]
+  }
