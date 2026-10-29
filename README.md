@@ -13,6 +13,6 @@
 Rode o seguinte código no seu terminal:
 
 ```
-docker build -t rotina-pipeline
+docker build -t rotina-pipeline .
 docker run --rm rotina-pipeline
 ```
