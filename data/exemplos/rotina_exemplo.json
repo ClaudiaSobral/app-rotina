@@ -1,32 +1,156 @@
 {
-    "exportado_em": "2026-10-24T20:30:00Z",
-    "eventos": [
-      {
-        "evento_id": "a1f3c2d4-0000-4000-8000-000000000001",
-        "tipo": "tarefa_criada",
-        "timestamp_utc": "2026-10-24T14:02:10Z",
-        "fuso": "America/Sao_Paulo",
-        "versao_esquema": 1,
-        "tarefa_id": "t-0001",
-        "nome": "Estudar Airflow",
-        "categoria": "Estudo"
-      },
-      {
-        "evento_id": "b7c9e1f2-0000-4000-8000-000000000002",
-        "tipo": "sessao_iniciada",
-        "timestamp_utc": "2026-10-24T14:05:00Z",
-        "fuso": "America/Sao_Paulo",
-        "versao_esquema": 1,
-        "tarefa_id": "t-0001",
-        "sessao_id": "s-0001"
-      },
-      {
-        "evento_id": "d2e8a3b4-0000-4000-8000-000000000003",
-        "tipo": "sessao_finalizada",
-        "timestamp_utc": "2026-10-24T14:45:30Z",
-        "fuso": "America/Sao_Paulo",
-        "versao_esquema": 1,
-        "sessao_id": "s-0001"
-      }
-    ]
-  }
+  "exportado_em": "2026-10-26T20:00:00Z",
+  "eventos": [
+    {
+      "evento_id": "a1f3c2d4-0000-4000-8000-000000000001",
+      "tipo": "tarefa_criada",
+      "timestamp_utc": "2026-10-24T14:02:10Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "tarefa_id": "t-0001",
+      "nome": "Estudar Airflow",
+      "categoria": "Estudo"
+    },
+    {
+      "evento_id": "b7c9e1f2-0000-4000-8000-000000000002",
+      "tipo": "sessao_iniciada",
+      "timestamp_utc": "2026-10-24T14:05:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "tarefa_id": "t-0001",
+      "sessao_id": "s-0001"
+    },
+    {
+      "evento_id": "d2e8a3b4-0000-4000-8000-000000000003",
+      "tipo": "sessao_finalizada",
+      "timestamp_utc": "2026-10-24T14:45:30Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0001"
+    },
+    {
+      "evento_id": "e3a1b5c6-0000-4000-8000-000000000004",
+      "tipo": "sessao_iniciada",
+      "timestamp_utc": "2026-10-25T13:00:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "tarefa_id": "t-0001",
+      "sessao_id": "s-0002"
+    },
+    {
+      "evento_id": "f4b2c6d7-0000-4000-8000-000000000005",
+      "tipo": "sessao_pausada",
+      "timestamp_utc": "2026-10-25T13:25:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0002"
+    },
+    {
+      "evento_id": "a5c3d7e8-0000-4000-8000-000000000006",
+      "tipo": "sessao_retomada",
+      "timestamp_utc": "2026-10-25T13:40:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0002"
+    },
+    {
+      "evento_id": "b6d4e8f9-0000-4000-8000-000000000007",
+      "tipo": "sessao_pausada",
+      "timestamp_utc": "2026-10-25T14:10:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0002"
+    },
+    {
+      "evento_id": "c7e5f9a1-0000-4000-8000-000000000008",
+      "tipo": "sessao_retomada",
+      "timestamp_utc": "2026-10-25T14:20:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0002"
+    },
+    {
+      "evento_id": "d8f6a1b2-0000-4000-8000-000000000009",
+      "tipo": "sessao_finalizada",
+      "timestamp_utc": "2026-10-25T14:50:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0002"
+    },
+    {
+      "evento_id": "e9a7b2c3-0000-4000-8000-000000000010",
+      "tipo": "tarefa_criada",
+      "timestamp_utc": "2026-10-26T17:50:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "tarefa_id": "t-0002",
+      "nome": "Escrever README",
+      "categoria": "Projeto"
+    },
+    {
+      "evento_id": "fa8b3c4d-0000-4000-8000-000000000011",
+      "tipo": "sessao_iniciada",
+      "timestamp_utc": "2026-10-26T18:00:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "tarefa_id": "t-0002",
+      "sessao_id": "s-0003"
+    },
+    {
+      "evento_id": "ab9c4d5e-0000-4000-8000-000000000012",
+      "tipo": "sessao_pausada",
+      "timestamp_utc": "2026-10-26T18:12:30Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0003"
+    },
+    {
+      "evento_id": "bcad5e6f-0000-4000-8000-000000000013",
+      "tipo": "sessao_retomada",
+      "timestamp_utc": "2026-10-26T18:15:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0003"
+    },
+    {
+      "evento_id": "cdbe6f7a-0000-4000-8000-000000000014",
+      "tipo": "sessao_pausada",
+      "timestamp_utc": "2026-10-26T18:40:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0003"
+    },
+    {
+      "evento_id": "decf7a8b-0000-4000-8000-000000000015",
+      "tipo": "sessao_retomada",
+      "timestamp_utc": "2026-10-26T18:41:30Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0003"
+    },
+    {
+      "evento_id": "efd08b9c-0000-4000-8000-000000000016",
+      "tipo": "sessao_pausada",
+      "timestamp_utc": "2026-10-26T19:05:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0003"
+    },
+    {
+      "evento_id": "f0e19cad-0000-4000-8000-000000000017",
+      "tipo": "sessao_retomada",
+      "timestamp_utc": "2026-10-26T19:10:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0003"
+    },
+    {
+      "evento_id": "01f2adbe-0000-4000-8000-000000000018",
+      "tipo": "sessao_finalizada",
+      "timestamp_utc": "2026-10-26T19:30:00Z",
+      "fuso": "America/Sao_Paulo",
+      "versao_esquema": 1,
+      "sessao_id": "s-0003"
+    }
+  ]
+}
