@@ -1,0 +1,58 @@
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    background: #fffbee;
+    overflow: hidden;
+}
+
+.bloco,
+.linha,
+.titulo {
+    position: absolute;
+}
+
+.linha {
+    background: #111;
+}
+
+.linha.horizontal {
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+
+.linha.vertical {
+    top: 0;
+    height: 100%;
+    width: 3px;
+}
+
+.amarelo { background: #ffde59;}
+.azul { background: #0b6fef;}
+.preto { background: #111;}
+.vermelho { background: #ff2e2e;}
+
+.titulo {
+    top: 40;
+    height: 20%;
+    left: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.titulo p {
+    margin: 4px 0 0;
+    font-size: 0.8rem;
+}
