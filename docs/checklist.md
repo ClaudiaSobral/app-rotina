@@ -12,12 +12,12 @@
   - Pronto quando: `npm run dev` abre a página
 - [x] Passo 1: layout base de celular
   - Pronto quando: app aparece numa coluna estreita no modo celular do DevTools
-- [ ] Passo 2: tela inicial (logo estática)
-- [ ] Passo 3: navegação entre telas
-- [ ] Passo 4: tela do cronômetro
-- [ ] Passo 5: sessões (iniciar/parar gera evento)
-- [ ] Passo 6: tela de categorias (criar e deletar)
-- [ ] Passo 7: tela de gráficos (treemap e barras)
+- [x] Passo 2: tela inicial (logo estática)
+- [ ] Passo 4: navegação entre telas
+- [ ] Passo 5: tela do cronômetro
+- [ ] Passo 6: sessões (iniciar/parar gera evento)
+- [ ] Passo 7: tela de categorias (criar e deletar)
+- [ ] Passo 8 .: tela de gráficos (treemap e barras)
 
 ## Semanas seguintes
 - [ ] Base de dados e exportação (contrato de dados)
@@ -29,3 +29,5 @@
 ## Decisões
 
 # Lembretes
+
+- Fazer fade entre as telas (opcional, mas ficaria bonito)

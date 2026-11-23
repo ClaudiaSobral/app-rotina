@@ -2,24 +2,25 @@ import data from '../../data/exemplos/rotina_exemplo.json'
 import Tarefa from './Tarefa'
 import Cronometro from './Cronometro'
 import Inicio from './Inicio'
+import { useState, useEffect } from 'react'
 
 function App() {
-  {/*const tarefas = data.eventos.filter(evento => evento.tipo === 'tarefa_criada')*/}
+  const [tela, setTela] = useState('inicio');
+  /*const tarefas = data.eventos.filter(evento => evento.tipo === 'tarefa_criada')*/
 
-  return (
-    <>
-     {/* <h1>Rotina</h1>
-      <ul>
-        {tarefas.map (tarefa => (
-          <Tarefa key={tarefa.tarefa_id} nome={tarefa.nome} categoria={tarefa.categoria}/>
-        ))}
-      </ul>
+  useEffect(() => {
+    const relogio = setTimeout (() => {
+      setTela('cronometro')
+    }, 2500)
 
-      <Cronometro /> */}
-      <Inicio />
-    </>
+    return () => clearTimeout(relogio)  
+  }, [])
 
-  )
+  if (tela === 'inicio') {
+    return <Inicio />
+  }
+
+  return <Cronometro />
 }
 
 export default App

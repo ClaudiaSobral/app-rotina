@@ -16,7 +16,7 @@ const verticais = [
 
 const blocos = [
     { cor: 'amarelo', esquerda: 0, topo: 80, largura: 40, altura: 40 },
-    { cor: 'preto', esquerda: 60, topo: 0, largura: 11.5, altura: 33.4 },
+    { cor: 'preto', esquerda: 60, topo: 0, largura: 10.8, altura: 33.5 },
     { cor: 'vermelho', esquerda: 30, topo: 10.8, largura: 25, altura: 5 },
     { cor: 'vermelho', esquerda: 0, topo: 0, largura: 61, altura: 33.4},
     { cor: 'azul', esquerda: 61, topo: 33.5, largura: 40, altura: 27},
