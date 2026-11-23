@@ -1,11 +1,25 @@
 import './Inicio.css'
 
-const horizontais = [16, 29, 40, 60, 91]
-const verticais = [20, 28, 50, 79]
+const horizontais = [    
+    {y: 10, de: 60, ate: 100},
+    {y: 33, de: 0, ate: 100},
+    {y: 60, de: 0, ate: 100},
+    {y: 75, de: 0, ate: 100},
+    {y: 80, de: 0, ate: 100}
+]
+const verticais = [
+    {x: 19, de: 60, ate: 100},
+    {x: 60, de: 0, ate: 60.5},
+    {x: 81, de: 60, ate: 100},
+
+]
 
 const blocos = [
-    { cor: 'amarelo', esquerda: 20, topo: 29, largura: 29, altura: 12 },
-    { cor: 'vermelho', esquerda: 21, topo: 60, largura: 60, altura: 30},
+    { cor: 'amarelo', esquerda: 0, topo: 80, largura: 40, altura: 40 },
+    { cor: 'preto', esquerda: 60, topo: 0, largura: 11.5, altura: 33.4 },
+    { cor: 'vermelho', esquerda: 30, topo: 10.8, largura: 25, altura: 5 },
+    { cor: 'vermelho', esquerda: 0, topo: 0, largura: 61, altura: 33.4},
+    { cor: 'azul', esquerda: 61, topo: 33.5, largura: 40, altura: 27},
 ]
 
 function Inicio() {
@@ -22,6 +36,32 @@ function Inicio() {
                     height: `${bloco.altura}%`,
                 }}
                 />              
+            ))}
+            {horizontais.map(linha => (
+                <div
+                key = {`${linha.y}-${linha.de}`}
+                className="linha horizontal"
+                style={{
+                    top: `${linha.y}%`,
+                    left: `${linha.de}%`,
+                    width: `${linha.ate - linha.de}%`,
+                }}
+                
+                />
+                
+            ))}
+            {verticais.map(linha => (
+                <div
+                key = {`${linha.x}-${linha.de}`}
+                className="linha vertical"
+                style={{
+                    left: `${linha.x}%`,
+                    top: `${linha.de}%`,
+                    height: `${linha.ate - linha.de}%`,
+                }}
+                
+                />
+                
             ))}
 
             <div className='titulo'>
