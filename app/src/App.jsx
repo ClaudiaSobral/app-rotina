@@ -16,8 +16,8 @@ function App() {
     return () => clearTimeout(relogio)  
   }, [])
 
-  if (tela === 'inicio') {
-    return <Inicio />
+  if (tela === 'cronometro') {
+    return <Cronometro />
   }
 
   return <Cronometro />
