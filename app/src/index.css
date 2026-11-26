@@ -6,6 +6,45 @@ body {
   font-family: system-ui;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  border-top: 1px solid #111;
+  background: #fffbee;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.menu button {
+  flex: 1;
+  min-height: 56px;
+  border: 0;
+  background: transparent;
+  color: #111;
+  font: inherit;
+  cursor: pointer;
+}
+
+.menu button + button {
+  border-left: 4px solid #111;
+}
+
+.menu button.ativo {
+  background: #ffde59;
+}
+
 .contador {
   font-size: 4rem;
   font-weight: 300;
