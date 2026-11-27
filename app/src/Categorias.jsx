@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import NovaTarefa from './NovaTarefa'
 
 function Categorias({ categorias, tarefas, registrar }) {
     const [novoNome, setNovoNome] = useState('')
@@ -43,14 +44,15 @@ function Categorias({ categorias, tarefas, registrar }) {
 
             <ul>
                 {categorias.map(categoria => {
-                    const quantidade = tarefas.filter(
+                    const tarefasDaCategoria = tarefas.filter(
                         t => t.categoria_id === categoria.categoria_id
-                    ).length
+                    )
+                    const quantidade = tarefasDaCategoria.length
 
                     return (
                         <li key={categoria.categoria_id}>
                             <span>{categoria.nome}</span>
-                            <small>{quantidade} atividades(s)</small>
+                            <small>{quantidade} atividade(s)</small>
                             <button
                             disabled={quantidade > 0}
                             aria-label={`Excluir ${categoria.nome}`}
@@ -62,13 +64,26 @@ function Categorias({ categorias, tarefas, registrar }) {
                             >
                                 Excluir
                             </button>
+
+                            <ul>
+                                {tarefasDaCategoria.map(tarefa => (
+                                    <li key={tarefa.tarefa_id}>
+                                        {tarefa.nome}
+                                        <button
+                                        aria-label={`Excluir ${tarefa.nome}`}
+                                        onClick={() => registrar('tarefa_arquivada', {tarefa_id: tarefa.tarefa_id})}>Excluir</button>
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <NovaTarefa categoriaId={categoria.categoria_id} registrar={registrar} />
                         </li>
                     )
 
                 })}
             </ul>
 
-            {categorias.lenght === 0 && <p>Nenhuma categoria ainda</p>}
+            {categorias.length === 0 && <p>Nenhuma categoria ainda</p>}
         </main>
     )
 }
