@@ -47,8 +47,10 @@ Este documento define quais dados o app gera e como o pipeline deve interpretá-
 
 | Tipo | Quando acontece | Campos extras |
 |---|---|---|
-| `tarefa_criada` | Você cria uma tarefa | `tarefa_id`, `nome`, `categoria` (opcional) |
-| `tarefa_editada` | Você muda nome ou categoria | `tarefa_id`, `nome`, `categoria` (valores novos) |
+| `categoria_criada` | Você cria uma categoria nova | `categoria_id`, `nome` |
+| `categoria_arquivada` | Você exclui uma categoria | `categoria_id`, `nome` |
+| `tarefa_criada` | Você cria uma tarefa | `tarefa_id`, `nome` |
+| `tarefa_editada` | Você muda nome ou categoria | `tarefa_id`, `nome` (valores novos) |
 | `tarefa_arquivada` | Você arquiva a tarefa | `tarefa_id` |
 | `sessao_iniciada` | Você inicia o cronômetro | `tarefa_id`, `sessao_id` |
 | `sessao_pausada` | Você pausa | `sessao_id` |
